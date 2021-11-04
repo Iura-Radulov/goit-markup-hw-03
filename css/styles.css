@@ -1,0 +1,156 @@
+/*основной цвет текста #212121;
+вторичный цвет текста #757575; rgba(117, 117, 117, 1);
+белый цвет #FFFFFF;
+синий цвет #2196F3;
+*/
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: rgba(117, 117, 117, 1);
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--primary-text-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo .accent {
+  color: var(--accent-color);
+}
+.navigation a {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.navigation a:hover,
+.navigation a:focus {
+  color: var(--accent-color);
+}
+.adress-link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.adress-link:hover,
+.adress-link:focus {
+  color: var(--accent-color);
+}
+.hero {
+  /* временно пока нет фона*/
+  background-color: #000000;
+
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
+.feature {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.feature-text {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+.team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-duty {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.footer > .logo {
+  /* временно пока нет фона*/
+  background-color: var(--primary-text-color);
+
+  color: var(--primary-white-color);
+}
+.adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.adress-place {
+  /* временно пока нет фона*/
+  background-color: var(--primary-text-color);
+
+  color: var(--primary-white-color);
+}
+.adress-mail,
+.adress-tel {
+  color: var(--secondary-text-color);
+}
+
+/* Portfolio*/
+.portfolio-button {
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+.portfolio-button [type="button"]:hover,
+.portfolio-button [type="button"]:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+.project a {
+  color: var(--primary-text-color);
+}
+.project h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+.project p {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
