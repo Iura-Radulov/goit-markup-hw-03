@@ -37,8 +37,22 @@ ul {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid blue;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*-------HEADER---------*/
 
 .main-nav {
   display: flex;
@@ -136,6 +150,15 @@ ul {
 
 /* -------FEATURE------------*/
 
+.feature {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 0;
+}
+.feature li:not(:last-child) {
+  margin-right: 30px;
+}
 .feature-primary-text {
   font-weight: 700;
   font-size: 14px;
@@ -152,12 +175,20 @@ ul {
 
 .occupation-title,
 .team-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
-
+.occupation-exemple {
+  display: flex;
+  padding-left: 0;
+  padding-bottom: 94px;
+}
+.occupation-exemple .item:not(last-child) {
+  margin-right: 30px;
+}
 /* -------TEAM----------*/
 
 .team {
@@ -166,6 +197,15 @@ ul {
 .team-title {
   padding-top: 94px;
   padding-bottom: 50px;
+  margin-bottom: 0;
+}
+.team-block {
+  display: flex;
+  padding-left: 0;
+  padding-bottom: 94px;
+}
+.team-block .item:not(:last-child) {
+  margin-right: 30px;
 }
 .team-name {
   font-weight: 500;
@@ -179,13 +219,21 @@ ul {
   line-height: 1.19;
   text-align: center;
 }
+
+/* -------FOOTER---------*/
+
 .footer > .logo {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
   /* временно пока нет фона*/
   background-color: var(--primary-text-color);
 
   color: var(--primary-white-color);
 }
 .address-footer {
+  padding-left: 0;
+  padding-bottom: 60px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -201,13 +249,21 @@ ul {
   color: var(--secondary-text-color);
 }
 
-/* Portfolio*/
+/*-----------PORTFOLIO-----------------*/
+
 .portfolio-button {
-  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  background-color: var(--primary-white-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+}
+.portfolio-button .item:not(last-child) {
+  margin-right: 8px;
 }
 .portfolio-button [type="button"]:hover,
 .portfolio-button [type="button"]:focus {
@@ -231,6 +287,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
+  padding-bottom: 94px;
 }
 .project {
   width: 370px;
